@@ -1,0 +1,1 @@
+[{"id":"4d25433b.68db3c","type":"file","z":"b6c72457.4f4398","name":"","filename":"/home/pi/node_log.csv","appendNewline":true,"createDir":false,"overwriteFile":"false","encoding":"none","x":997.5,"y":306,"wires":[["62bb9ed2.1a5aa"]]}]
