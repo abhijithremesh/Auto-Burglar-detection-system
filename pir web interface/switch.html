@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch</title>
+	<link rel="stylesheet" type="text/css" href="switch.css">
+</head>
+
+<body>
+ 
+
+
+ 
+ <p class="status">Current status</p>
+ <p  class="status" id="insert"> </p>
+
+	
+	<label>
+		<input type="checkbox" id="checkboxid"  onclick="checkAddress(this)" autocomplete="off">
+		<span class="check"></span>
+		<span class="light off">Off</span>
+		<span class="light on">On</span>
+	</label>
+
+<script language = "JavaScript">
+
+
+        function checkAddress(checkbox) {
+        	if (checkbox.checked){
+        		alert("Turning ON");
+        		var i = 1;
+        		document.getElementById("insert").innerHTML = i;
+        		document.getElementById("checkboxid").innerHTML = ON;
+        		
+
+
+        	}
+        	else{
+        		alert("Turning OFF");
+        		var i = 0;
+        		document.getElementById("insert").innerHTML = i;
+        		document.getElementById("checkboxid").innerHTML = OFF;
+        		
+        	}
+            
+        } 
+</script>
+
+
+</body>
+</html>
