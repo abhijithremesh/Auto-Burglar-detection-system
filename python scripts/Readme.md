@@ -1,3 +1,5 @@
+## Data Parsing,Formatting and Upload ##
+
 Once the data from the three inputs: PIR, manual switch and MAC switch is parsed via the Nodered.
 The data is then transformed in different formats to implement various approaches.
 
@@ -13,6 +15,7 @@ The data is then transformed in different formats to implement various approache
 8. weekly_upload.sh needs to be run every weekend which comprises of 4,5,6 and 7 in chronological order so that the data inside the motionsenor5min gets updated weekly.
 9. motionsensor5min contains the historical data in the format Timestamp,WDay,Time_index,PIR.
 
+## Prediction Scripts ##
 
 * avgdetections10min.py fetches the avg no of detections over 25 mins from the historical data stored in motionsensor5min.
 * avgdetections5min.py fetches the avg no of detections over 15 mins from the historical data stored in motionsensor5min.
@@ -27,5 +30,6 @@ A statistical method based on the interquartile region and standard deviation ap
 * boxplotprediction.py corresponds to the boxplot approach.
 * stdprediction.py corresponds to the standard deviation approach.
 
+## Weekly Summary scripts ##
 
 weeklysummary_boxplot.py plots the weekly summary of detected timestamps based on the noderedlog.csv
