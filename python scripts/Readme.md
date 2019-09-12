@@ -1,13 +1,13 @@
 Once the data from the three inputs: PIR, manual switch and MAC switch is parsed via the Nodered.
 The data is then transformed in different formats to implement various approaches.
 
-* 1.The data is first logged via NodeRed on a noderedlog.csv
+1. The data is first logged via NodeRed on a noderedlog.csv
   Timestamp,PIR,switch,mac 
-*2.The data is also logged via NodeRed onto the InfluxDB - motionsensor
-*3.This data is now available for visualisation in Grafana.
-*4.fivemins.py reads the noderedlog.csv and converts it into five minute format as data_fivemins.csv
+2. The data is also logged via NodeRed onto the InfluxDB - motionsensor
+3. This data is now available for visualisation in Grafana.
+4. fivemins.py reads the noderedlog.csv and converts it into five minute format as data_fivemins.csv
   Timestamp,WDay,Time_index,PIR
-*5.csv_influx.py reads the data_fivemins.csv and converts the dd-mm-yyyy hh:mm:ss format to UNIX time format compatible for InfluxDB as data_fivemins_influx.csv
+5. csv_influx.py reads the data_fivemins.csv and converts the dd-mm-yyyy hh:mm:ss format to UNIX time format compatible for InfluxDB as data_fivemins_influx.csv
 *6.csv_to_line.py reads the data_fivemins_influx.csv and converts it into line format as data_fivemins.txt , ready for InfluxDB upload.
 *7.A curl command is then executed to write this data onto the InfluxDB , motionsensor5min.
 *8.weekly_upload.sh needs to be run every weekend which comprises of 4,5,6 and 7 in chronological order so that the data inside the motionsenor5min gets updated weekly.
