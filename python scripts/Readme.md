@@ -1,7 +1,7 @@
 Once the data from the three inputs: PIR, manual switch and MAC switch is parsed via the Nodered.
 The data is then transformed in different formats to implement various approaches.
 
-*1.The data is first logged via NodeRed on a noderedlog.csv
+* 1.The data is first logged via NodeRed on a noderedlog.csv
   Timestamp,PIR,switch,mac 
 *2.The data is also logged via NodeRed onto the InfluxDB - motionsensor
 *3.This data is now available for visualisation in Grafana.
