@@ -35,7 +35,7 @@ Whenever there is a need to edit any of these parameters the ESP is required to 
 Also, as an enhancement, the hardware switch (indicating person presence) has been replaced with an online switch so that the user could have an access to it via the webpage rather than expecting the user to enable and disable the switch physically. This is achieved by the “Online switch node” configured in Node-RED. The switch can be turned on/off via Node-RED UI.
 Apart from switch functionality, Address Resolution protocol (ARP) has been incorporated in the application which is realized using the ARP node in Node-RED. The mac id of the user’s mobile is specified in the ARP node. Whenever, the user’s mobile is connected to Wi-Fi at his presence, the ARP outputs a value of “1” indicating that the user is at home.
 <br/>
-![PCB](Auto-Burglar-Detection-and-Data-Analytics-with-PIR-Sensors-and-Machine-Learning/Images/image/pcb.png)
+![PCB](Auto-Burglar-detection-system/version 2/Auto-Burglar-Detection-and-Data-Analytics-with-PIR-Sensors-and-Machine-Learning/Images/image/pcb.png)
 ## DATA ANALYSIS APPROACHES
 
 ### <ins>Historical data analysis</ins>
